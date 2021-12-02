@@ -21,7 +21,7 @@ console.groupEnd();
 console.group("Triángulos")
 
 function perimetroTriangulo(lado1, lado2, base) {
-    return lado1 + lado2 + base;
+    return (lado1 + lado2 + base);
 }
 
 function areaTriangulo(base, altura) {
@@ -71,4 +71,29 @@ function calcularAreaCuadrado() {
     const value = input.value;
     const area = areaCuadrado(value);
     alert(area);
+}
+
+function calcularAreaTriangulo() {
+    const inputOne = document.getElementById("inputBase");
+    const inputTwo = document.getElementById("inputAltura");
+    //Base triángulo
+    const valueOne = inputOne.value;
+    //Altura triángulo
+    const valueTwo = inputTwo.value;
+    const area = areaTriangulo(valueOne, valueTwo);
+    alert(area);
+}
+
+function calcularPerimetroTriangulo() {
+    const inputOne = document.getElementById("inputLadoUno");
+    const inputTwo = document.getElementById("inputLadoDos");
+    const inputThree = document.getElementById("inputBase");
+    //Lado Uno triángulo
+    const valueOne = Number(inputOne.value);
+    //Lado Dos triángulo
+    const valueTwo = Number(inputTwo.value);
+    //Base triángulo
+    const valueThree = Number(inputThree.value);
+    const perimetro = perimetroTriangulo(valueOne, valueTwo, valueThree);
+    alert(perimetro);
 }

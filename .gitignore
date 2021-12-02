@@ -105,3 +105,6 @@ dist
 
 # configuración de vscode
 .vscode
+
+#imagenes jpg
+.*jpg

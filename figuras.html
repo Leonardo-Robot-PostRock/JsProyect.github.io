@@ -9,63 +9,80 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="body-main">
     <header>
         <h1>
             Figuras geom&eacute;tricas
         </h1>
-        <p>Este es mi primer taller del curso pr&aacute;ctico de javascript</p>
+        <p class="p-presentacion">Este es mi primer taller del curso pr&aacute;ctico de javascript</p>
     </header>
-    <!-- Sección de cuadrado ---------------------------------------------------------------->
-    <section class="section-cuadrado">
-        <h2 class="figuras-subTitle">Calcula el &aacute;rea y per&iacute;metro de un cuadrado</h2>
-        <p><strong>Nota</strong>: "&Aacute;rea= l * l y Per&iacute;metro= l * 4"</p>
-        <form>
-            <label for="inputCuadrado">
-                Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+    <main>
+
+        <!-- Sección de cuadrado ---------------------------------------------------------------->
+        <section class="section-cuadrado">
+            <h2 class="figuras-subTitle">Calcula el &aacute;rea y per&iacute;metro de tu cuadrado</h2>
+            <p><strong>Nota</strong>: "&Aacute;rea= l * l y Per&iacute;metro= l * 4"</p>
+            <form>
+                <label for="inputCuadrado">
+                    Escribe cu&aacute;nto mide cada lado de tu cuadrado:
+                </label>
+                <input id="inputCuadrado" type="number" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el per&iacute;metro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    calcular el &aacute;rea
+                </button>
+                </input>
+        </section>
+        <!-- Sección del triángulo --------------------------------------------------------------->
+        <section class="section-triangulo">
+            <h2 class="figuras-subTitle">Calcula el &aacute;rea y per&iacute;metro de tu tri&aacute;ngulo:</h2>
+            <p><strong>Nota</strong>: "&Aacute;rea = (b * a)/ 2 y Per&iacute;metro = l + l + b"</p>
+            <label for="inputLadoUno">
+                Escribe cuanto mide el primer lado de tu tri&aacute;ngulo
             </label>
-            <input id="inputCuadrado" type="number" />
-            <button type="button" onclick="calcularPerimetroCuadrado()">
+            <input id="inputLadoUno" type="number" />
+            <label for="inputLadoDos">
+                Escribe cuanto mide el segundo lado de tu tri&aacute;ngulo
+            </label>
+            <input id="inputLadoDos" type="number" />
+            <label for="inputBase">
+                Escribe cuanto mide la base de tu tri&aacute;ngulo
+            </label>
+            <input id="inputBase" type="number" />
+            <label for="inputAltura">
+                Escribe cuanto mide la altura de tu tri&aacute;ngulo
+            </label>
+            <input id="inputAltura" type="number" />
+            <button type="button" onclick="calcularPerimetroTriangulo()">
                 Calcular el per&iacute;metro
             </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
+            <button type="button" onclick="calcularAreaTriangulo()">
                 calcular el &aacute;rea
             </button>
             </input>
-    </section>
-    <!-- Sección del triángulo --------------------------------------------------------------->
-    <section class="section-triangulo">
-        <h2 class="figuras-subTitle">Calcula el &aacute;rea y per&iacute;metro de tu tri&aacute;ngulo:</h2>
-        <p><strong>Nota</strong>: "&Aacute;rea = (b * a)/ 2" y Per&iacute;metro = l + l + b</p>
-        <label for="inputLadoUno">
-            Escribe cuanto mide el primer lado de tu tri&aacute;ngulo
-        </label>
-        <input id="inputLadoUno" type="number" />
-        <label for="inputLadoDos">
-            Escribe cuanto mide el segundo lado de tu tri&aacute;ngulo
-        </label>
-        <input id="inputLadoDos" type="number" />
-        <label for="inputBase">
-            Escribe cuanto mide la base de tu tri&aacute;ngulo
-        </label>
-        <input id="inputBase" type="number" />
-        <label for="inputAltura">
-            Escribe cuanto mide la altura de tu tri&aacute;ngulo
-        </label>
-        <input id="inputAltura" type="number" />
-        <button type="button" onclick="calcularPerimetroTriangulo()">
-            Calcular el per&iacute;metro
-        </button>
-        <button type="button" onclick="calcularAreaTriangulo()">
-            calcular el &aacute;rea
-        </button>
-        </input>
-        </form>
-    </section>
-    <!-- Sección de círculo -------------------------------------------------------------------->
-    <section class="section-circulo">
-        <h2 class="figuras-subTitle"></h2>
-    </section>
+            </form>
+        </section>
+        <!-- Sección de círculo -------------------------------------------------------------------->
+        <section class="section-circulo">
+            <h2 class="figuras-subTitle">Calcula el di&aacute;metro, &aacute;rea y per&iacute;metro de tu
+                c&iacute;rculo:
+            </h2>
+            <p><strong>Nota</strong>: "Di&aacute;metro= r * 2, &Aacute;rea = (r * r) * PI y Per&iacute;metro = d * PI"
+            </p>
+            <label for="radio">
+                Escribe cuanto mide el radio de tu c&iacute;rculo
+            </label>
+            <input id="radio" type="number" />
+            <button type="button" onclick="calcularPerimetro()">
+                Calcular el di&aacute;metro
+            </button>
+            <button type="button" onclick="calcularArea()">
+                Calcular el &aacute;rea
+            </button>
+        </section>
+    </main>
     <script src="./figuras.js"></script>
 </body>
 

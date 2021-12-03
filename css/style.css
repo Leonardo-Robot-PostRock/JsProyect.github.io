@@ -7,19 +7,77 @@
 html {
   font-size: 62.5%;
 }
-body{
-  width: 100%;
-  background-image: url();
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FB3640;
 }
 
 header {
-  background-color: pink;
+  width: 100%;
+  background-color: rgb(84, 46, 113, 0.8);
+  opacity: 0.9;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 h1 {
+  color: white;
   font-size: 3rem;
+  text-align: center;
 }
 
 .p-presentacion {
+  color: #fdca40;
   font-size: 2rem;
+  text-align: center;
+}
+
+.main-content {
+  margin: 2rem auto 0;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+section {
+  display: flex;
+  border-radius: 2rem;
+  border: solid 0.2rem #fdca40;
+  background-color: rgb(167, 153, 183);
+  width: 35rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+section > p {
+  display: inline-flex;
+  background-color: #fdca40;
+  color: black;
+  font-size: 1.6rem;
+  text-align: center;
+  
+}
+
+section > h2 {
+  text-align: center;
+}
+
+form > label {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: #542E71;
+}
+
+button {
+  width: 100%;
+}
+input {
+  width: 100%;
 }

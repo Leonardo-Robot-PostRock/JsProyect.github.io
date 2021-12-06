@@ -1,3 +1,5 @@
+/* Nota: este es un diseño no responsivo.  -------------------------------*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +12,7 @@ html {
 body {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FB3640;
+  background-color: #fb3640;
 }
 
 header {
@@ -19,16 +21,25 @@ header {
   opacity: 0.9;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+}
+
+h1:hover {
+  color: red;
 }
 
 .p-presentacion {
   color: #fdca40;
   font-size: 2rem;
   text-align: center;
+}
+
+.p-presentacion:hover {
+  color: red;
 }
 
 .main-content {
@@ -41,7 +52,7 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 section {
@@ -57,27 +68,76 @@ section {
 }
 
 section > p {
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  padding: 0 0.5rem;
+  text-align: center;
+  width: 20rem;
+  border-radius: 1rem;
   display: inline-flex;
   background-color: #fdca40;
   color: black;
   font-size: 1.6rem;
   text-align: center;
-  
+  margin-bottom: 1rem;
 }
 
 section > h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  color: black;
+  background-color: white;
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 form > label {
+  padding: 0 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: gray;
+  text-align: center;
+  display: flex;
   font-family: Roboto;
   font-size: 1.6rem;
-  color: #542E71;
+  color: black;
+}
+
+form > label:hover {
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 button {
-  width: 100%;
+  border: none;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-color: blue;
+  text-transform: uppercase;
+  width: 70%;
 }
+
+button:hover {
+  width: 75%;
+  color: white;
+}
+
 input {
-  width: 100%;
+  border: none;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  height: 3rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+input:hover {
+  width: 50%;
 }

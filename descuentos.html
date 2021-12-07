@@ -7,10 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos | Curso pr&aacute;ctico de javascript</title>
     <link rel="stylesheet" href="./css/styleDescuentosYporcentajes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css">
 </head>
 
 <body>
-    <h1>Porcentajes y descuentos</h1>
+    <header class="cabecera">
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+    </header>
+    <main>
+        <div class="container-subtitle">
+            <h2 class="subtitle">Calcula el precio a pagar de tus productos con descuento</h2>
+        </div>
+        <section>
+            <form>
+                <label for="inputPrice">
+                    Escribe el precio de tu producto
+                </label>
+                <input id="inputPrice" type="number" />
+                <label for="inputDiscount">
+                    Escribe el descuento de tu producto
+                </label>
+                <input id="inputDiscount" type="number" />
+                <button type="button" onclick="onClickButtonPriceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+                <div class="box-resultado">
+                    <p id="ResultP"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>Realizado por Leonardo Puebla</li>
+                <li>Curso JavaScript Práctico | De Platzi</li>
+                <li>7/12/21</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="./js/descuentos.js"></script>
+
 </html>

@@ -1,0 +1,163 @@
+:root {
+  --primer-color: #383e56;
+  --segundo-color: #9fb8ad;
+  --tercer-color: #c5d7bd;
+  --cuarto-color: #fb743e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Cascadia Code", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
+
+.cabecera {
+  display: flex;
+  background-color: var(--primer-color);
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20%;
+  min-width: 34rem;
+  max-width: 60rem;
+  text-align: center;
+}
+
+.cabecera h1 {
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  max-width: 44rem;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.cabecera h1::first-letter {
+  font-size: 3rem;
+  color: var(--cuarto-color);
+}
+
+.cabecera p {
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 44rem;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+.cabecera p::first-letter {
+  font-size: 2rem;
+  color: var(--cuarto-color);
+}
+
+main {
+  display: flex;
+  height: 70%;
+  min-width: 34rem;
+  max-width: 60rem;
+  background-color: var(--tercer-color);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-subtitle {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  background-color: var(--segundo-color);
+  justify-content: center;
+}
+
+.subtitle {
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  min-width: 34rem;
+  max-width: 42rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  background-color: white;
+  display: flex;
+  width: 70%;
+  min-width: 40rem;
+  max-width: 50rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form > label {
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+form > input {
+  text-align: center;
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
+  border-color: var(--primer-color);
+  height: 3rem;
+  margin: 1rem;
+  min-width: 34rem;
+}
+
+form > button {
+  font-family: "Cascadia Code", sans-serif;
+  min-width: 34rem;
+  border-radius: 0.5rem;
+  color: white;
+  height: 3rem;
+  border: none;
+  background-color: var(--primer-color);
+  width: 20rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+button:hover{
+  background-color: #4f5778;
+}
+
+.box-resultado {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  border: solid 0.1rem;
+  height: 10rem;
+  font-size: 1.6rem;
+  min-width: 34rem;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+  background-color: var(--cuarto-color);
+}

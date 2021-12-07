@@ -21,72 +21,71 @@ body {
 }
 
 .cabecera {
-  display: flex;
   background-color: var(--primer-color);
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
-  width: 100%;
   height: 20%;
-  min-width: 34rem;
+  justify-content: center;
   max-width: 60rem;
+  min-width: 36rem;
   text-align: center;
+  width: 100%;
 }
 
 .cabecera h1 {
   color: white;
-  padding: 1rem;
-  width: 100%;
   max-width: 44rem;
+  padding: 1rem;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
+  width: 100%;
 }
 
 .cabecera h1::first-letter {
-  font-size: 3rem;
   color: var(--cuarto-color);
+  font-size: 3rem;
 }
 
 .cabecera p {
   color: white;
   font-size: 1.6rem;
-  padding: 1rem;
-  width: 100%;
   max-width: 44rem;
+  padding: 1rem;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
+  width: 100%;
 }
 
 .cabecera p::first-letter {
-  font-size: 2rem;
   color: var(--cuarto-color);
+  font-size: 2rem;
 }
 
 main {
-  display: flex;
-  height: 70%;
-  min-width: 34rem;
-  max-width: 60rem;
   background-color: var(--tercer-color);
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  height: 70%;
+  justify-content: center;
+  min-width: 36rem;
+  max-width: 60rem;
 }
 
 .container-subtitle {
-  display: flex;
-  width: 100%;
-  height: max-content;
   background-color: var(--segundo-color);
+  display: flex;
+  height: max-content;
   justify-content: center;
+  width: 100%;
 }
 
 .subtitle {
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0.5rem 0.5rem 0.5rem black;
   font-size: 1.6rem;
-  text-align: center;
+  min-width: 36rem;
   padding: 1rem;
+  text-align: center;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  text-transform: uppercase;
   width: 100%;
-  min-width: 34rem;
-  max-width: 42rem;
 }
 
 section {
@@ -97,67 +96,100 @@ section {
 
 form {
   background-color: white;
+  border-radius: 0.5rem;
   display: flex;
-  width: 70%;
-  min-width: 40rem;
-  max-width: 50rem;
   flex-wrap: wrap;
   justify-content: center;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-width: 50rem;
+  min-width: 36rem;
+  width: 70%;
 }
 
 form > label {
-  padding: 1rem;
   font-size: 1.6rem;
-  width: 100%;
+  padding: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 form > input {
-  text-align: center;
-  outline: none;
+  border-color: var(--primer-color);
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.5rem black;
-  border-color: var(--primer-color);
   height: 3rem;
   margin: 1rem;
-  min-width: 34rem;
+  min-width: 36rem;
+  outline: none;
+  text-align: center;
 }
 
 form > button {
-  font-family: "Cascadia Code", sans-serif;
-  min-width: 34rem;
+  background-color: var(--primer-color);
+  border: none;
   border-radius: 0.5rem;
   color: white;
-  height: 3rem;
-  border: none;
-  background-color: var(--primer-color);
-  width: 20rem;
   cursor: pointer;
+  font-family: "Cascadia Code", sans-serif;
+  height: 3rem;
   margin: 1rem;
+  min-width: 36rem;
+  width: 20rem;
 }
 
-button:hover{
+button:hover {
   background-color: #4f5778;
 }
 
 .box-resultado {
-  font-family: "Courier New", Courier, monospace;
-  margin-bottom: 1rem;
-  border-radius: 0.2rem;
   border: solid 0.1rem;
-  height: 10rem;
+  border-radius: 0.2rem;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.6rem;
-  min-width: 34rem;
+  height: 10rem;
+  margin-bottom: 1rem;
+  min-width: 36rem;
 }
 
 footer {
-  width: 100%;
-  height: 10%;
-  position: absolute;
-  bottom: 0;
-  font-size: 1.2rem;
+  align-items: center;
   background-color: var(--cuarto-color);
+  bottom: 0;
+  display: flex;
+  font-size: 1rem;
+  height: 10%;
+  justify-content: center;
+  max-width: 60rem;
+  min-width: 36rem;
+  position: absolute;
+  width: 100%;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  list-style: none;
+}
+
+.info {
+  background-color: var(--primer-color);
+  border: solid 0.2rem var(--segundo-color);
+  border-radius: 0.5rem;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+div {
+  height: 100%;
+}
+
+.li-img__imgLogo {
+  align-items: center;
+  border-radius: 0.5rem;
+  border: solid 0.2rem var(--segundo-color);
+  display: flex;
+  height: 5.5rem;
+  padding: 0;
 }

@@ -1,0 +1,21 @@
+.cabecera {
+    min-width: 60rem;
+    max-width: 80rem;
+}
+
+.cabecera p {
+    max-width: max-content;
+}
+
+main {
+    max-width: 80rem;
+}
+
+form {
+    max-width: 40rem;
+}
+
+footer {
+    max-width: 80rem;
+}
+

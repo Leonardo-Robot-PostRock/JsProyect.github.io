@@ -1,3 +1,4 @@
+/* Responsividad mínima de 360vw */
 :root {
   --primer-color: #383e56;
   --segundo-color: #9fb8ad;
@@ -21,6 +22,7 @@ body {
 }
 
 .cabecera {
+  align-items: center;
   background-color: var(--primer-color);
   display: flex;
   flex-wrap: wrap;
@@ -70,9 +72,10 @@ main {
 }
 
 .container-subtitle {
+  align-items: center;
   background-color: var(--segundo-color);
   display: flex;
-  height: max-content;
+  height: 15%;
   justify-content: center;
   width: 100%;
 }
@@ -89,7 +92,9 @@ main {
 }
 
 section {
+  align-items: center;
   display: flex;
+  height: 85%;
   justify-content: center;
   width: 100%;
 }
@@ -99,15 +104,15 @@ form {
   border-radius: 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  height: 90%;
   justify-content: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  max-width: 50rem;
+  max-width: 40rem;
   min-width: 36rem;
   width: 70%;
 }
 
 form > label {
+  cursor: pointer;
   font-size: 1.6rem;
   padding: 1rem;
   text-align: center;
@@ -120,7 +125,7 @@ form > input {
   box-shadow: 0.5rem 0.5rem 0.5rem black;
   height: 3rem;
   margin: 1rem;
-  min-width: 36rem;
+  min-width: 34rem;
   outline: none;
   text-align: center;
 }
@@ -134,7 +139,7 @@ form > button {
   font-family: "Cascadia Code", sans-serif;
   height: 3rem;
   margin: 1rem;
-  min-width: 36rem;
+  min-width: 34rem;
   width: 20rem;
 }
 
@@ -149,7 +154,8 @@ button:hover {
   font-size: 1.6rem;
   height: 10rem;
   margin-bottom: 1rem;
-  min-width: 36rem;
+  height: 6rem;
+  min-width: 34rem;
 }
 
 footer {
@@ -174,11 +180,14 @@ ul {
 }
 
 .info {
+  align-items: center;
   background-color: var(--primer-color);
   border: solid 0.2rem var(--segundo-color);
   border-radius: 0.5rem;
   color: white;
-  margin: 1rem;
+  display: flex;
+  height: 5rem;
+  margin-left: 1rem;
   padding: 1rem;
 }
 div {
@@ -187,9 +196,9 @@ div {
 
 .li-img__imgLogo {
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   border: solid 0.2rem var(--segundo-color);
   display: flex;
-  height: 5.5rem;
+  height: 5rem;
   padding: 0;
 }

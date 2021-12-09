@@ -17,6 +17,10 @@ html {
   font-size: 62.5%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   height: 100vh;
 }
@@ -66,7 +70,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   height: 70%;
-  justify-content: center;
   min-width: 36rem;
   max-width: 60rem;
 }
@@ -75,26 +78,26 @@ main {
   align-items: center;
   background-color: var(--segundo-color);
   display: flex;
-  height: 15%;
+  height: 10%;
   justify-content: center;
   width: 100%;
 }
 
 .subtitle {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   min-width: 36rem;
-  padding: 1rem;
+  padding: 0.25rem;
   text-align: center;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
   text-transform: uppercase;
   width: 100%;
 }
 
-section {
+.section-form {
   align-items: center;
   display: flex;
-  height: 85%;
+  height: 75%;
   justify-content: center;
   width: 100%;
 }
@@ -114,7 +117,7 @@ form {
 form > label {
   cursor: pointer;
   font-size: 1.6rem;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   width: 100%;
 }
@@ -158,6 +161,46 @@ button:hover {
   min-width: 34rem;
 }
 
+.section-coupons {
+  background-color: var(--primer-color);
+  display: flex;
+  width: 100%;
+  height: 15%;
+}
+
+.container-coupons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.title-coupons {
+  color: white;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.listUl {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.listUl__li {
+  display: flex;
+  list-style: none;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--cuarto-color);
+  padding: 0 1rem;
+  background-color: black;
+}
+
 footer {
   align-items: center;
   background-color: var(--cuarto-color);
@@ -172,7 +215,7 @@ footer {
   width: 100%;
 }
 
-ul {
+.ul-footer {
   align-items: center;
   display: flex;
   height: 100%;

@@ -54,7 +54,7 @@ body {
   color: white;
   font-size: 1.6rem;
   max-width: 44rem;
-  padding: 1rem;
+  padding: 0.25rem;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
   width: 100%;
 }
@@ -147,9 +147,10 @@ button:hover {
   border: solid 0.1rem;
   border-radius: 0.2rem;
   font-size: 1.6rem;
-  margin-bottom: 1rem;
-  height: 4rem;
+  margin: 0 1rem 1rem 1rem;
+  height: 12%;
   width: 20rem;
+  max-height: max-content;
 }
 
 .section-coupons {
@@ -221,7 +222,7 @@ footer {
   color: white;
   display: flex;
   height: 5rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   padding: 1rem;
 }
 div {

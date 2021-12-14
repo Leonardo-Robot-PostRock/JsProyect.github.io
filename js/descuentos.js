@@ -85,7 +85,7 @@ function onClickButtonPriceDiscount() {
 
     if (!userCoupon) {
         const resultP = document.getElementById("ResultP");
-        resultP.innerText = "El cupón: " + couponValue + " no es válido";
+        resultP.innerText = couponValue + " no es válido";
     } else {
         const descuento = userCoupon.descuento;
         const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);

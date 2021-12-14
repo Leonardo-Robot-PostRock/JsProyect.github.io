@@ -204,7 +204,7 @@ footer {
   font-size: 1rem;
   height: 10%;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 

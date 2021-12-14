@@ -92,7 +92,7 @@ function onClickButtonPriceDiscount() {
 
         const resultP = document.getElementById("ResultP");
 
-        resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+        resultP.innerText = "Total: $" + precioConDescuento;
     }
 }
 

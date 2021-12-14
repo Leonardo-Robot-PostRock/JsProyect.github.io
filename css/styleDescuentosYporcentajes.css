@@ -173,6 +173,7 @@ button:hover {
   color: white;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
   text-align: center;
+  font-size: 1.6rem;
   width: 100%;
   margin: 0.5rem 0;
 }
@@ -188,10 +189,10 @@ button:hover {
 .listUl__li {
   display: flex;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 0.2rem;
   color: var(--cuarto-color);
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: black;
 }
 

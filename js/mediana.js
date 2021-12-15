@@ -4,3 +4,5 @@ const lista1 = [
     500,
     400000000,
 ]
+
+const mitadLista1 = lista1.length / 2;

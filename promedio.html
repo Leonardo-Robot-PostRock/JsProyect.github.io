@@ -9,7 +9,21 @@
 </head>
 
 <body>
-    <h1>Promedio</h1>
+    <header>
+        <h1>Promedio</h1>
+    </header>
+    <main>
+        <form>
+            <label for="numeroDatos">Ingrese sueldos: </label>
+            <input type="number" id="numeroDatos">
+            <button type="button" onclick="addInput()">enviar</button>
+        </form>
+        <h2>Ingrese los datos</h2>
+        <form id="addInputs">
+        </form>
+        <p id="resultado">
+        </p>
+    </main>
     <script src="./js/promedio.js"></script>
 </body>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Salarios
+        </h1>
+        <p>Este programa calcula el top 10% de salarios más diferenciados</p>
+    </header>
+    <main>
+        <form>
+            <label for="nombre">
+                <span>Agregue personas</span>
+                <input type="text" placeholder="nombre" id="nombre">
+                <input type="number" placeholder="salario" id="salario">
+            </label>
+            <button type="button" onclick="agregarPersona()">Agregar persona</button>
+        </form>
+        <div>
+            <button type="button" onclick="calcularMedianaTop10()">Calcular mediana: top salarios 10%</button>
+            <button type="button" onclick="calcularMedianaGeneral()">Calcular mediana general</button>
+            <p id="resultadoPersonas"></p>
+            <p id="resultado"></p>
+            <p id="resultadoMedianaG"></p>
+        </div>
+    </main>
+    <script src="./js/salariosWeb.js"></script>
+</body>
+
+</html>

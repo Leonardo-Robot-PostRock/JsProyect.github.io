@@ -1,3 +1,11 @@
+//Ejercicio resuelto en la clase
+
+//Helpers
+function esPar(numero) {
+    return (numero % 2 === 0);
+}
+
+
 const salariosArg = argentina.map(
 
     function (persona) {
@@ -5,31 +13,7 @@ const salariosArg = argentina.map(
     }
 );
 
-const salariosArgSorted = salariosArg.sort(function (salaryA, salaryB) {
-    return salaryA - salaryB;
-}
-);
-
-function esPar(numero) {
-    return (numero % 2 === 0);
-    // if(numero % 2 === 0){
-    //     return true;
-    // }else {
-    //     return false
-    // }
-}
-
-function calcularMediaAritmetica(lista) {
-    const sumaLista = lista.reduce(
-        function (valorAcumulado = 0, nuevoElemento) {
-            return valorAcumulado + nuevoElemento;
-        }
-    );
-
-    const promedioLista = sumaLista / lista.length;
-
-    return promedioLista;
-}
+//Calculadora de mediana general
 
 function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);
@@ -46,9 +30,38 @@ function medianaSalarios(lista) {
     }
 }
 
-const medianaGeneralArg = medianaSalarios(salariosArgSorted);   
+//Mediana General
 
-
-console.log(
-    medianaSalarios(salariosArgSorted)
+const salariosArgSorted = salariosArg.sort(function (salaryA, salaryB) {
+    return salaryA - salaryB;
+}
 );
+
+
+function calcularMediaAritmetica(lista) {
+    const sumaLista = lista.reduce(
+        function (valorAcumulado = 0, nuevoElemento) {
+            return valorAcumulado + nuevoElemento;
+        }
+    );
+
+    const promedioLista = sumaLista / lista.length;
+
+    return promedioLista;
+}
+
+const medianaGeneralArg = medianaSalarios(salariosArgSorted);
+
+//Mediana del top 10%
+
+const spliceStart = parseInt(salariosArgSorted.length * 90) / 100;
+const spliceCount = salariosArgSorted.length - spliceStart;
+
+const salariosArgTop10 = salariosArgSorted.splice(spliceStart, spliceCount,);
+
+const medianaTop10Arg = medianaSalarios(salariosArgTop10);
+
+console.log({
+    medianaGeneralArg,
+    medianaTop10Arg,
+});

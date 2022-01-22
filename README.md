@@ -2,6 +2,8 @@
 
 ...
 
+> https://leonardo-robot-postrock.github.io/descuentos.html
+
 ## Talller #1: figuras geométricas
 
 - Primer paso: definir las fórmulas

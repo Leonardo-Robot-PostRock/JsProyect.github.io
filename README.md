@@ -4,7 +4,7 @@
 
 > https://leonardo-robot-postrock.github.io/JsProyect.github.io/descuentos.html
 ---
- https://leonardo-robot-postrock.github.io/JsProyect.github.io/figuras.html
+> https://leonardo-robot-postrock.github.io/JsProyect.github.io/figuras.html
 
 ## Talller #1: figuras geométricas
 
